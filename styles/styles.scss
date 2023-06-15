@@ -1,0 +1,94 @@
+@use 'partials/index' as *;
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    section{
+        width: 100%;
+        height: max(calc(100vh - 85.6px), 40rem);
+    }
+    .hero{
+        position: relative;
+        display: grid;
+        place-items: center;
+        .card{
+            opacity: 0;
+            animation: pop .5s 1.2s forwards;
+            padding: .5rem;
+            background-color: $purple;
+            border: 2px solid $black;
+            border-radius: 10px;
+            width: 250px;
+            position: absolute;
+            img{
+                border-radius: 10px;
+            }
+            h2{
+                margin-bottom: 0;
+                text-align: center;
+            }
+            p{
+                margin: 0;
+                text-align: center;
+            }
+            @keyframes pop {
+                from{
+                    opacity: 0;
+                }
+                to{
+                    opacity: 1;
+                }
+            }
+        }
+        .card-1{
+            top: 1rem;
+            left: 1rem;
+            rotate: -2deg;
+        }
+        .card-2{
+            right: 1rem;
+            bottom: 2.5rem;
+            rotate: 3deg;
+        }
+            .img-container{
+                width: 400px;
+                max-width: 600px;
+                position: relative;
+                border-radius: 10px;
+                aspect-ratio: 1;
+                animation: zoom 1s ease-out;
+                @keyframes zoom{
+                    from{
+                        width: 600px;
+                    }
+                    to{
+                        width: 400px;
+                    }
+                }
+                img{
+                    object-fit: cover;
+                    width: 100%;
+                    aspect-ratio: 1;
+                    border-radius: 10px;
+                }
+                h1{
+                    text-align: center;
+                    line-break: balance;
+                    position: absolute;
+                    width: max-content;
+                    top: 8rem;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    margin: auto;
+                    backdrop-filter: blur(1rem);
+                    padding: .2rem;
+                    border-radius: inherit;
+                    color: $purple;
+                }
+            }
+    }
+    .sec-2{
+        background-color: $purple;
+    }
+}

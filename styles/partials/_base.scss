@@ -1,0 +1,63 @@
+@use 'colors' as *;
+
+
+body{
+    background-color: $blue;
+    color: $black;
+    display: grid;
+    grid-template-rows: 85.6px 1fr;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    color: $black;
+    padding-inline: 2rem;
+    background-color: rgba($yellow, 0.1);
+    border-bottom: 5px solid $yellow;
+    }
+    h1{
+        flex-grow: 1;
+    }
+    ul{
+        align-self: center;
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+        align-items: center;
+        li{
+            .nav-link{
+                color: $black;
+                text-decoration: none;
+                position: relative;
+                isolation: isolate;
+                &:hover::after{
+                    transform: scaleY(1);
+                }
+                &::after{
+                    position: absolute;
+                    content: '';
+                    z-index: -1;
+                    height: 100%;
+                    width: calc(100% + 10px);
+                    background-color: rgba($yellow, 0.3);
+                    left: -5px;
+                    right: -5px;
+                    transform: scaleY(0);
+                    transition: transform 300ms;
+                    transform-origin: top;
+                }
+            }
+            .nav-btn{
+                background-color: $purple;
+                color: $black;
+                border-radius: 10px;
+                padding: 1rem;
+                transition: background-color 200ms;
+                &:hover{
+                    background-color: darken($purple, 10%);
+                }
+            }
+        }
+    }
+

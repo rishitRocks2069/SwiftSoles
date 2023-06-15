@@ -1,0 +1,9 @@
+@mixin center {
+    display: grid;
+    place-items: center;
+}
+
+@mixin circle{
+    border-radius: 100vmax;
+    aspect-ratio: 1;
+}
