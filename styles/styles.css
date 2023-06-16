@@ -124,7 +124,7 @@ main .hero {
 }
 main .hero .card {
   opacity: 0;
-  animation: pop 0.5s 0.8s forwards;
+  animation: pop 0.5s 0.9s forwards;
   padding: 0.5rem;
   background-color: #e9d6ec;
   border: 2px solid #272727;
