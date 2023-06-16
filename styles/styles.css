@@ -123,6 +123,7 @@ main .hero {
   place-items: center;
 }
 main .hero .card {
+  z-index: 100;
   opacity: 0;
   animation: pop 0.5s 0.9s forwards;
   padding: 0.5rem;
@@ -152,13 +153,13 @@ main .hero .card p {
   }
 }
 main .hero .card-1 {
-  top: 1rem;
-  left: 1rem;
+  top: 2.5rem;
+  left: 6rem;
   rotate: -2deg;
 }
 main .hero .card-2 {
-  right: 1rem;
-  bottom: 2.5rem;
+  right: 4rem;
+  bottom: 7rem;
   rotate: 3deg;
 }
 main .hero .img-container {
