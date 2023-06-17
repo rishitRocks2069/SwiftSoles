@@ -11,12 +11,14 @@ main{
     }
     .products{
         padding: 2rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+        gap: 2rem;
         .product{
             text-decoration: none;
             color:$black;
             position:relative;
             background-color: $yellow;
-            width: 20rem;
             padding: .5rem;
             border: 2px solid $black;
             border-radius: 10px;
@@ -34,7 +36,6 @@ main{
             img{
                 border-radius: inherit;
                 margin-bottom: 1rem;
-                aspect-ratio: 19/20;
                 object-fit: cover;
             }
             .info{

@@ -119,13 +119,15 @@ main h1 {
 }
 main .products {
   padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  gap: 2rem;
 }
 main .products .product {
   text-decoration: none;
   color: #272727;
   position: relative;
   background-color: #F18F01;
-  width: 20rem;
   padding: 0.5rem;
   border: 2px solid #272727;
   border-radius: 10px;
@@ -144,7 +146,6 @@ main .products .product .label {
 main .products .product img {
   border-radius: inherit;
   margin-bottom: 1rem;
-  aspect-ratio: 19/20;
   -o-object-fit: cover;
      object-fit: cover;
 }
