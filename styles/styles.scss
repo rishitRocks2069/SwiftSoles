@@ -23,7 +23,7 @@ main{
             width: 250px;
             position: absolute;
             &:hover .text{
-                grid-template-rows: 1fr 1fr;
+                grid-template-rows: 1fr 2fr;
             }
             img{
                 border-radius: 10px;
@@ -34,7 +34,7 @@ main{
                 grid-template-rows: 0fr 0fr;
                 h2{
                     overflow: hidden;
-                    margin-bottom: 0;
+                    margin: 0;
                     text-align: center;
                 }
                 p{

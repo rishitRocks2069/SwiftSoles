@@ -134,7 +134,7 @@ main .hero .card {
   position: absolute;
 }
 main .hero .card:hover .text {
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
 }
 main .hero .card img {
   border-radius: 10px;
@@ -146,7 +146,7 @@ main .hero .card .text {
 }
 main .hero .card .text h2 {
   overflow: hidden;
-  margin-bottom: 0;
+  margin: 0;
   text-align: center;
 }
 main .hero .card .text p {
