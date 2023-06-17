@@ -8,7 +8,7 @@ main{
         width: 100%;
         height: max(calc(100vh - 85.6px), 40rem);
     }
-    .hero{
+    .hero{  
         position: relative;
         display: grid;
         place-items: center;
@@ -22,16 +22,26 @@ main{
             border-radius: 10px;
             width: 250px;
             position: absolute;
+            &:hover .text{
+                grid-template-rows: 1fr 1fr;
+            }
             img{
                 border-radius: 10px;
             }
-            h2{
-                margin-bottom: 0;
-                text-align: center;
-            }
-            p{
-                margin: 0;
-                text-align: center;
+            .text{
+                transition: grid-template-rows 500ms;
+                display: grid;
+                grid-template-rows: 0fr 0fr;
+                h2{
+                    overflow: hidden;
+                    margin-bottom: 0;
+                    text-align: center;
+                }
+                p{
+                    overflow: hidden;
+                    margin: 0;
+                    text-align: center;
+                }
             }
             @keyframes pop {
                 from{
@@ -44,12 +54,12 @@ main{
         }
         .card-1{
             top: 2.5rem;
-            left: 6rem;
+            left: 5rem;
             rotate: -2deg;
         }
         .card-2{
             right: 4rem;
-            bottom: 7rem;
+            top: 11rem;
             rotate: 3deg;
         }
             .img-container{

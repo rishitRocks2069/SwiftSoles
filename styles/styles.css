@@ -133,14 +133,24 @@ main .hero .card {
   width: 250px;
   position: absolute;
 }
+main .hero .card:hover .text {
+  grid-template-rows: 1fr 1fr;
+}
 main .hero .card img {
   border-radius: 10px;
 }
-main .hero .card h2 {
+main .hero .card .text {
+  transition: grid-template-rows 500ms;
+  display: grid;
+  grid-template-rows: 0fr 0fr;
+}
+main .hero .card .text h2 {
+  overflow: hidden;
   margin-bottom: 0;
   text-align: center;
 }
-main .hero .card p {
+main .hero .card .text p {
+  overflow: hidden;
   margin: 0;
   text-align: center;
 }
@@ -154,12 +164,12 @@ main .hero .card p {
 }
 main .hero .card-1 {
   top: 2.5rem;
-  left: 6rem;
+  left: 5rem;
   rotate: -2deg;
 }
 main .hero .card-2 {
   right: 4rem;
-  bottom: 7rem;
+  top: 11rem;
   rotate: 3deg;
 }
 main .hero .img-container {
