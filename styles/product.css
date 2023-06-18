@@ -115,14 +115,16 @@ ul li .nav-btn:hover {
 main {
   display: grid;
   place-items: center;
+  padding: 2rem;
 }
 main .product {
-  display: flex;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
   border-radius: 10px;
+  max-width: 70rem;
 }
 main .product img {
-  width: 20rem;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: inherit;
@@ -137,4 +139,7 @@ main .product .info h2 {
 }
 main .product .info .customize form h3 {
   margin-block: 0.2rem;
+}
+main .product .info .customize form label {
+  cursor: pointer;
 }/*# sourceMappingURL=product.css.map */

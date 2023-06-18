@@ -3,12 +3,14 @@
 main{
     display: grid;
     place-items: center;
+    padding: 2rem;
     .product{
-        display: flex;
-        gap: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
         border-radius: 10px;
+        max-width: 70rem;
         img{
-            width: 20rem;
             object-fit: cover;
             border-radius: inherit;
         }
@@ -23,6 +25,9 @@ main{
                 form{
                     h3{
                         margin-block: .2rem;
+                    }
+                    label{
+                        cursor: pointer;
                     }
                 }
             }
