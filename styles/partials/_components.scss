@@ -1,13 +1,17 @@
 @use 'colors' as *;
 
 .btn{
+    cursor: pointer;
     background-color: $yellow;
     color: $black;
     border-radius: 10px;
     padding: .5rem 1rem;
     text-decoration: none;
-    transition: background-position 500ms;
+    transition: background-color 200ms;
     border: 0;
     font: inherit;
+    &:hover{
+        background-color: lighten($yellow, 5%);
+    }
 }
 

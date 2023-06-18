@@ -76,7 +76,7 @@ ul li .nav-link:hover::after {
 ul li .nav-link::after {
   position: absolute;
   content: "";
-  z-index: -1;
+  z-index: -2;
   height: 100%;
   width: calc(100% + 10px);
   background-color: rgba(241, 143, 1, 0.3);
@@ -98,14 +98,18 @@ ul li .nav-btn:hover {
 }
 
 .btn {
+  cursor: pointer;
   background-color: #F18F01;
   color: #272727;
   border-radius: 10px;
   padding: 0.5rem 1rem;
   text-decoration: none;
-  transition: background-position 500ms;
+  transition: background-color 200ms;
   border: 0;
   font: inherit;
+}
+.btn:hover {
+  background-color: #fe9c0e;
 }
 
 main .text {
