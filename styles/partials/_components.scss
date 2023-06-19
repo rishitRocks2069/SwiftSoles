@@ -2,7 +2,7 @@
 
 .btn{
     cursor: pointer;
-    background-color: $yellow;
+    background-color: $green;
     color: $black;
     border-radius: 10px;
     border: .1rem solid $black;
@@ -11,7 +11,7 @@
     transition: background-color 200ms;
     font: inherit;
     &:hover{
-        background-color: lighten($yellow, 5%);
+        background-color: $dark-green;
     }
 }
 

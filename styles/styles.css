@@ -38,8 +38,8 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  background-color: #96bdc6;
-  color: #272727;
+  background-color: #f9f6f7;
+  color: #1e1517;
   display: grid;
   grid-template-rows: 85.6px 1fr;
 }
@@ -47,10 +47,10 @@ body {
 nav {
   display: flex;
   align-items: center;
-  color: #272727;
+  color: #1e1517;
   padding-inline: 2rem;
-  background-color: rgba(241, 143, 1, 0.05);
-  border-bottom: 5px solid #F18F01;
+  background-color: #50e283;
+  border-bottom: 5px solid #1daf99;
 }
 
 h1 {
@@ -65,7 +65,7 @@ ul {
   align-items: center;
 }
 ul li .nav-link {
-  color: #272727;
+  color: #1e1517;
   text-decoration: none;
   position: relative;
   isolation: isolate;
@@ -79,7 +79,7 @@ ul li .nav-link::after {
   z-index: -2;
   height: 100%;
   width: calc(100% + 10px);
-  background-color: rgba(241, 143, 1, 0.3);
+  background-color: #1daf99;
   left: -5px;
   right: -5px;
   transform: scaleY(0);
@@ -88,7 +88,7 @@ ul li .nav-link::after {
 }
 ul li .nav-btn {
   background-color: #e9d6ec;
-  color: #272727;
+  color: #1e1517;
   border-radius: 10px;
   padding: 1rem;
   transition: background-color 200ms;
@@ -99,17 +99,17 @@ ul li .nav-btn:hover {
 
 .btn {
   cursor: pointer;
-  background-color: #F18F01;
-  color: #272727;
+  background-color: #50e283;
+  color: #1e1517;
   border-radius: 10px;
-  border: 0.1rem solid #272727;
+  border: 0.1rem solid #1e1517;
   padding: 0.5rem 1rem;
   text-decoration: none;
   transition: background-color 200ms;
   font: inherit;
 }
 .btn:hover {
-  background-color: #fe9c0e;
+  background-color: #1daf99;
 }
 
 main {
@@ -131,8 +131,8 @@ main .hero .card {
   opacity: 0;
   animation: pop 0.5s 0.9s forwards;
   padding: 0.5rem;
-  background-color: #e9d6ec;
-  border: 2px solid #272727;
+  background-color: #50e283;
+  border: 2px solid #1e1517;
   border-radius: 10px;
   width: 250px;
   position: absolute;

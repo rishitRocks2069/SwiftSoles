@@ -34,17 +34,16 @@ main{
                         display: none;
                     }
                     input[type='radio']:checked + label{
-                        background-color: $yellow;
+                        background-color: $dark-green;
                     }
                     label{
                         cursor: pointer;
-                        background-color: $blue;
                         padding:.2rem 1rem;
                         border-radius: 10px;
                         border: .1rem solid $black;
                         transition: background-color 300ms;
                         &:hover{
-                            background-color: lighten($yellow,10%);
+                            background-color: $green;
                         }
                     }
                 }
