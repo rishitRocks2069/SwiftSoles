@@ -182,7 +182,7 @@ main .hero .img-container {
   position: relative;
   border-radius: 10px;
   aspect-ratio: 1;
-  animation: zoom 0.7s ease-in;
+  animation: zoom 600ms ease-in;
 }
 @keyframes zoom {
   from {

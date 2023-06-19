@@ -68,7 +68,7 @@ main{
                 position: relative;
                 border-radius: 10px;
                 aspect-ratio: 1;
-                animation: zoom .7s ease-in;
+                animation: zoom 600ms ease-in;
                 @keyframes zoom{
                     from{
                         width: 600px;
