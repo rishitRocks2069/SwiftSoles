@@ -17,17 +17,35 @@ main{
         .info{
             border-radius: inherit;
             padding: 1rem;
-            border: 1px solid $black;
-            h2{
+            border: .1rem solid $black;
+            h1{
                 margin-top: 0;
+            }
+            .price{
+                font-weight: bold;
+                font-size:1.5rem;
             }
             .customize{
                 form{
                     h3{
-                        margin-block: .2rem;
+                        margin-block: .4rem;
+                    }
+                    input[type='radio']{
+                        display: none;
+                    }
+                    input[type='radio']:checked + label{
+                        background-color: $yellow;
                     }
                     label{
                         cursor: pointer;
+                        background-color: $blue;
+                        padding:.2rem 1rem;
+                        border-radius: 10px;
+                        border: .1rem solid $black;
+                        transition: background-color 300ms;
+                        &:hover{
+                            background-color: lighten($yellow,10%);
+                        }
                     }
                 }
             }

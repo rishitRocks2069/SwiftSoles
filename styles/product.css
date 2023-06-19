@@ -102,10 +102,10 @@ ul li .nav-btn:hover {
   background-color: #F18F01;
   color: #272727;
   border-radius: 10px;
+  border: 0.1rem solid #272727;
   padding: 0.5rem 1rem;
   text-decoration: none;
   transition: background-color 200ms;
-  border: 0;
   font: inherit;
 }
 .btn:hover {
@@ -132,14 +132,32 @@ main .product img {
 main .product .info {
   border-radius: inherit;
   padding: 1rem;
-  border: 1px solid #272727;
+  border: 0.1rem solid #272727;
 }
-main .product .info h2 {
+main .product .info h1 {
   margin-top: 0;
 }
+main .product .info .price {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
 main .product .info .customize form h3 {
-  margin-block: 0.2rem;
+  margin-block: 0.4rem;
+}
+main .product .info .customize form input[type=radio] {
+  display: none;
+}
+main .product .info .customize form input[type=radio]:checked + label {
+  background-color: #F18F01;
 }
 main .product .info .customize form label {
   cursor: pointer;
+  background-color: #96bdc6;
+  padding: 0.2rem 1rem;
+  border-radius: 10px;
+  border: 0.1rem solid #272727;
+  transition: background-color 300ms;
+}
+main .product .info .customize form label:hover {
+  background-color: #fea627;
 }/*# sourceMappingURL=product.css.map */

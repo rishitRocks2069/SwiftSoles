@@ -102,10 +102,10 @@ ul li .nav-btn:hover {
   background-color: #F18F01;
   color: #272727;
   border-radius: 10px;
+  border: 0.1rem solid #272727;
   padding: 0.5rem 1rem;
   text-decoration: none;
   transition: background-color 200ms;
-  border: 0;
   font: inherit;
 }
 .btn:hover {
