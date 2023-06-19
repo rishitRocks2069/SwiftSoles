@@ -109,105 +109,34 @@ ul li .nav-link::after {
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 2rem;
 }
-main section {
-  width: 100%;
-  height: max(100vh - 85.6px, 40rem);
+main .info {
+  margin-bottom: 1rem;
 }
-main .hero {
-  position: relative;
-  display: grid;
-  place-items: center;
+main .info h2, main .info h3 {
+  margin-block: 0.5em;
 }
-main .hero .card {
-  z-index: 100;
-  opacity: 0;
-  animation: pop 0.5s 0.9s forwards;
+main .cart {
+  border: 0.1rem solid #1e1517;
+  border-radius: 10px;
   padding: 0.5rem;
-  background-color: #50e283;
-  border: 2px solid #1e1517;
-  border-radius: 10px;
-  width: 250px;
-  position: absolute;
 }
-main .hero .card:hover .text {
-  grid-template-rows: 1fr 2fr;
-}
-main .hero .card img {
-  border-radius: 10px;
-}
-main .hero .card .text {
-  transition: grid-template-rows 400ms;
-  display: grid;
-  grid-template-rows: 0fr 0fr;
-}
-main .hero .card .text h2 {
-  overflow: hidden;
-  margin: 0;
-  text-align: center;
-}
-main .hero .card .text p {
-  overflow: hidden;
-  margin: 0;
-  text-align: center;
-}
-@keyframes pop {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-main .hero .card-1 {
-  top: 2.5rem;
-  left: 5rem;
-  rotate: -2deg;
-}
-main .hero .card-2 {
-  right: 4rem;
-  top: 14rem;
-  rotate: 3deg;
-}
-main .hero .img-container {
-  width: 400px;
-  max-width: 600px;
-  position: relative;
-  border-radius: 10px;
-  aspect-ratio: 1;
-  animation: zoom 600ms ease-in;
-}
-@keyframes zoom {
-  from {
-    width: 600px;
-  }
-  to {
-    width: 400px;
-  }
-}
-main .hero .img-container img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  aspect-ratio: 1;
-  border-radius: 10px;
-}
-main .hero .img-container h1 {
-  text-align: center;
-  line-break: balance;
-  position: absolute;
+main .product {
+  border-bottom: 0.1rem solid #1e1517;
+  height: 20rem;
   width: -moz-max-content;
   width: max-content;
-  top: 8rem;
-  left: 50%;
-  transform: translateX(-50%);
-  margin: auto;
-  -webkit-backdrop-filter: blur(1rem);
-          backdrop-filter: blur(1rem);
-  padding: 0.2rem;
-  border-radius: inherit;
-  color: #1daf99;
-}/*# sourceMappingURL=styles.css.map */
+  padding: 0.5rem;
+  display: flex;
+  gap: 2rem;
+}
+main .product img {
+  border-radius: 10px;
+}
+main .product h2, main .product h3 {
+  margin-block: 0.1rem;
+}
+main .product .btn {
+  padding: 0.5rem 3rem;
+}/*# sourceMappingURL=cart.css.map */

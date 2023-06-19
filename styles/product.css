@@ -64,6 +64,12 @@ ul {
   gap: 2rem;
   align-items: center;
 }
+ul li a:has(ion-icon) {
+  color: #1e1517;
+}
+ul li a:has(ion-icon) ion-icon {
+  font-size: 1.7rem;
+}
 ul li .nav-link {
   color: #1e1517;
   text-decoration: none;
@@ -85,16 +91,6 @@ ul li .nav-link::after {
   transform: scaleY(0);
   transition: transform 300ms;
   transform-origin: top;
-}
-ul li .nav-btn {
-  background-color: #e9d6ec;
-  color: #1e1517;
-  border-radius: 10px;
-  padding: 1rem;
-  transition: background-color 200ms;
-}
-ul li .nav-btn:hover {
-  background-color: #d6b3dc;
 }
 
 .btn {
@@ -142,7 +138,7 @@ main .product .info .price {
   font-size: 1.5rem;
 }
 main .product .info .customize form h3 {
-  margin-block: 0.4rem;
+  margin-block: 1rem;
 }
 main .product .info .customize form input[type=radio] {
   display: none;

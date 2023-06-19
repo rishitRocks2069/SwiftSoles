@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/product.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <title>SwiftSole</title>
 </head>
 <body>
@@ -14,6 +16,7 @@
           <li><a href="index.html" class="nav-link">Home</a></li>
           <li><a href="shop.html" class="nav-link">Shop</a></li>
           <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="cart.html"><ion-icon name="cart-outline"></ion-icon></a></li>
       </ul>
   </nav>
   <main>
@@ -25,10 +28,12 @@
                 <form action="">
                     <div class="size">
                         <h3>Size:</h3>
+                        <input id="size1" type="radio" name="size"><label for="size1">Size 1</label>
+                        <input id="size2" type="radio" name="size"><label for="size2">Size 2</label>
+                        <input id="size3" type="radio" name="size"><label for="size3">Size 3</label>
                         <input id="size4" type="radio" name="size"><label for="size4">Size 4</label>
                         <input id="size5" type="radio" name="size"><label for="size5">Size 5</label>
                         <input id="size6" type="radio" name="size"><label for="size6">Size 6</label>
-                        <input id="size7" type="radio" name="size"><label for="size7">Size 7</label>
                     </div>
                     <div class="clr1">
                         <h3>Primary Color:</h3>
