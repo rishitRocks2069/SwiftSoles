@@ -29,7 +29,7 @@ main{
                 border-radius: 10px;
             }
             .text{
-                transition: grid-template-rows 500ms;
+                transition: grid-template-rows 400ms;
                 display: grid;
                 grid-template-rows: 0fr 0fr;
                 h2{
@@ -59,7 +59,7 @@ main{
         }
         .card-2{
             right: 4rem;
-            top: 11rem;
+            top: 14rem;
             rotate: 3deg;
         }
             .img-container{

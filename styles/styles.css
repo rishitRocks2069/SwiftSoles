@@ -144,7 +144,7 @@ main .hero .card img {
   border-radius: 10px;
 }
 main .hero .card .text {
-  transition: grid-template-rows 500ms;
+  transition: grid-template-rows 400ms;
   display: grid;
   grid-template-rows: 0fr 0fr;
 }
@@ -173,7 +173,7 @@ main .hero .card-1 {
 }
 main .hero .card-2 {
   right: 4rem;
-  top: 11rem;
+  top: 14rem;
   rotate: 3deg;
 }
 main .hero .img-container {
