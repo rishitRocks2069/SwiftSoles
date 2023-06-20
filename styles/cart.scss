@@ -9,22 +9,37 @@ main{
         }
     }
     .cart{
-        border: .1rem solid $black;
         border-radius: 10px;
-        padding: .5rem;
     }
     .product{
         border-bottom: .1rem solid $black;
-        height: 20rem;
+        height: 10rem;
         width: max-content;
         padding: .5rem;
         display: flex;
-        gap: 2rem;
+        gap: 1rem;
         img{
             border-radius: 10px;
         }
         h2,h3{
             margin-block: .1rem;
+        }
+        h2{
+            margin-right: 3rem;
+        }
+        h4{
+            color:#4f4e4e;
+        }
+        .details{
+            margin-right: 3rem;
+        }
+        p{
+            margin: 0;
+            margin-top: 1.5rem;
+        }
+        .price{
+            text-align: right;
+            margin-bottom: 1rem;
         }
         .btn{
             padding: .5rem 3rem;

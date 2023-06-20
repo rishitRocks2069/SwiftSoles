@@ -118,24 +118,39 @@ main .info h2, main .info h3 {
   margin-block: 0.5em;
 }
 main .cart {
-  border: 0.1rem solid #1e1517;
   border-radius: 10px;
-  padding: 0.5rem;
 }
 main .product {
   border-bottom: 0.1rem solid #1e1517;
-  height: 20rem;
+  height: 10rem;
   width: -moz-max-content;
   width: max-content;
   padding: 0.5rem;
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
 }
 main .product img {
   border-radius: 10px;
 }
 main .product h2, main .product h3 {
   margin-block: 0.1rem;
+}
+main .product h2 {
+  margin-right: 3rem;
+}
+main .product h4 {
+  color: #4f4e4e;
+}
+main .product .details {
+  margin-right: 3rem;
+}
+main .product p {
+  margin: 0;
+  margin-top: 1.5rem;
+}
+main .product .price {
+  text-align: right;
+  margin-bottom: 1rem;
 }
 main .product .btn {
   padding: 0.5rem 3rem;
