@@ -132,11 +132,12 @@ main .product {
 main .product img {
   border-radius: 10px;
 }
-main .product h2, main .product h3 {
-  margin-block: 0.1rem;
-}
-main .product h2 {
+main .product .main {
   margin-right: 3rem;
+}
+main .product .main h2 {
+  margin-top: 0;
+  margin-bottom: 0.2rem;
 }
 main .product h4 {
   color: #4f4e4e;
@@ -144,14 +145,13 @@ main .product h4 {
 main .product .details {
   margin-right: 3rem;
 }
-main .product p {
-  margin: 0;
-  margin-top: 1.5rem;
+main .product .details h3 {
+  margin-block: 0 0.5rem;
 }
 main .product .price {
   text-align: right;
-  margin-bottom: 1rem;
+  margin-block: 0 1rem;
 }
 main .product .btn {
-  padding: 0.5rem 3rem;
+  padding: 0.5rem 2.5rem;
 }/*# sourceMappingURL=cart.css.map */

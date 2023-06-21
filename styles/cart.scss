@@ -21,28 +21,28 @@ main{
         img{
             border-radius: 10px;
         }
-        h2,h3{
-            margin-block: .1rem;
-        }
-        h2{
+        .main{
             margin-right: 3rem;
+            h2{
+                margin-top: 0;
+                margin-bottom: .2rem;
+            }
         }
         h4{
             color:#4f4e4e;
         }
         .details{
             margin-right: 3rem;
-        }
-        p{
-            margin: 0;
-            margin-top: 1.5rem;
+            h3{
+                margin-block: 0 .5rem;
+            }
         }
         .price{
             text-align: right;
-            margin-bottom: 1rem;
+            margin-block: 0 1rem;
         }
         .btn{
-            padding: .5rem 3rem;
+            padding: .5rem 2.5rem;
         }
     }
 }
