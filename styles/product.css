@@ -49,8 +49,6 @@ nav {
   align-items: center;
   color: #1e1517;
   padding-inline: 2rem;
-  background-color: #50e283;
-  border-bottom: 5px solid #1daf99;
 }
 
 h1 {
@@ -85,7 +83,7 @@ ul li .nav-link::after {
   z-index: -2;
   height: 100%;
   width: calc(100% + 10px);
-  background-color: #1daf99;
+  background-color: #50e283;
   left: -5px;
   right: -5px;
   transform: scaleY(0);
